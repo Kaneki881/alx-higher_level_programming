@@ -111,4 +111,5 @@ class SinglyLinkedList:
         current = self.head
         while current is not None:
             nodes.append(str(current.data))
-
+            current = current.next_node
+        return '\n'.join(nodes)
